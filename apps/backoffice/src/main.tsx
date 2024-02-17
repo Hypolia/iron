@@ -18,7 +18,7 @@ const oidcConfig: OidcConfiguration = {
   redirect_uri: window.location.origin + '/authentication/callback',
   silent_redirect_uri: window.location.origin + '/authentication/silent_callback',
   scope: 'openid profile',
-  authority: 'http://localhost:8080/realms/leadcode',
+  authority: 'http://localhost:8080/realms/hypolia',
   service_worker_only: false,
   demonstrating_proof_of_possession: false
 }
