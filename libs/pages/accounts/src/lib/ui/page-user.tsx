@@ -1,6 +1,6 @@
-import {UserEntity} from "@leadcode/contracts";
-import {IconAwesomeEnum} from "@leadcode/enums";
-import {BlockContent, Button, ButtonSize, ButtonStyle, InputText, NavigationLeft} from "@leadcode/ui";
+import {UserEntity} from "@hypolia/contracts";
+import {IconAwesomeEnum} from "@hypolia/enums";
+import {BlockContent, Button, ButtonSize, ButtonStyle, InputText, NavigationLeft} from "@hypolia/ui";
 import {useParams} from "react-router";
 import {Controller, useFormContext} from "react-hook-form";
 import {FormEventHandler} from "react";

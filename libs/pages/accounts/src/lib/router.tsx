@@ -1,4 +1,4 @@
-import { Route } from '@leadcode/routes'
+import { Route } from '@hypolia/routes'
 import { PageUsersGeneralFeature } from './feature/page-users-general-feature'
 import { PageUserFeature } from './feature/page-user-feature'
 import {PageRolesGeneralFeature} from "./feature/page-roles-general-feature";

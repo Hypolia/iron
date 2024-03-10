@@ -1,4 +1,4 @@
-import {Button} from "@leadcode/ui";
+import {Button} from "@hypolia/ui";
 
 export default function PageGeneral () {
   return (

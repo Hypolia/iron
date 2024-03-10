@@ -1,7 +1,7 @@
 import { ReactNode, useState } from "react"
 import { Menu, MenuAlign, MenuData } from '../../menu/menu'
 import { Tooltip } from "../../tooltip/tooltip"
-import { classNames } from "@leadcode/utils"
+import { classNames } from "@hypolia/utils"
 
 export interface ButtonIconActionElementProps {
 	triggerTooltip?: string

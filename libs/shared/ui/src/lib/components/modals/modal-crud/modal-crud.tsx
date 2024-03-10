@@ -1,8 +1,8 @@
 import {type FormEventHandler, type ReactNode, useEffect} from 'react'
 import {useFormContext} from "react-hook-form";
-import {Button, ButtonSize, ButtonStyle, Icon, Truncate} from "@leadcode/ui";
+import {Button, ButtonSize, ButtonStyle, Icon, Truncate} from "@hypolia/ui";
 import {Popover} from "../../popover/popover";
-import {IconAwesomeEnum} from "@leadcode/enums";
+import {IconAwesomeEnum} from "@hypolia/enums";
 
 export interface ModalCrudProps {
   children: ReactNode

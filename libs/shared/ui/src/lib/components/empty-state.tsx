@@ -1,4 +1,4 @@
-import { classNames } from "@leadcode/utils"
+import { classNames } from "@hypolia/utils"
 import { ReactNode } from "react"
 
 export interface EmptyStateProps {

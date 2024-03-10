@@ -1,5 +1,5 @@
-import {RoleEntity} from "@leadcode/contracts";
-import {Button, EmptyState, Table, TableHeadProps, useModal} from "@leadcode/ui";
+import {RoleEntity} from "@hypolia/contracts";
+import {Button, EmptyState, Table, TableHeadProps, useModal} from "@hypolia/ui";
 import {CreateRoleModal} from "../form/create-role-modal";
 import {TableRowRole} from "./table-row-role";
 

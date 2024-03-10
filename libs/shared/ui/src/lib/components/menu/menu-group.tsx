@@ -1,5 +1,5 @@
 import { ReactNode, useEffect, useState } from "react"
-import { sortByKey } from '@leadcode/utils'
+import { sortByKey } from '@hypolia/utils'
 import { MenuDivider } from '@szhsin/react-menu'
 import { InputSearch } from "../inputs/input-search"
 import { MenuItem, type MenuItemProps } from "./menu-item"
@@ -63,7 +63,7 @@ export function MenuGroup (props: MenuGroupProps) {
 
 	return (
 		<div style={style}>
-			{!isFilter && menu?.title && 
+			{!isFilter && menu?.title &&
 				<div className="flex justify-between items-center" style={headPaddingStyle}>
 					{ menu?.title &&
 						<p data-testid="title" className="text-sm text-neutral-350">
@@ -83,7 +83,7 @@ export function MenuGroup (props: MenuGroupProps) {
 
 			{ menu.search &&
 				<div>
-					<InputSearch 
+					<InputSearch
 						autofocus
 						placeholder="Search"
 						isEmpty={filteredItems.length === 0}

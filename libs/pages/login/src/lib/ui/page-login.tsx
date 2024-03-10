@@ -1,5 +1,5 @@
 import { useFormContext, Controller } from 'react-hook-form'
-import { Button, InputText } from '@leadcode/ui'
+import { Button, InputText } from '@hypolia/ui'
 
 export interface LoginProps {
   disabled: boolean

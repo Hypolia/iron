@@ -1,8 +1,8 @@
 import { useDispatch, useSelector } from "react-redux";
 import { useNavigate } from "react-router";
-import { AppDispatch } from '@leadcode/state/store'
+import { AppDispatch } from '@hypolia/state/store'
 import { useEffect } from "react";
-import { getUserState } from "@leadcode/domains/users";
+import { getUserState } from "@hypolia/domains/users";
 
 export function useRedirectIfLogged(path: string | undefined = '/home') {
   const navigate = useNavigate()

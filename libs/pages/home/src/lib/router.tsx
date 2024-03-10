@@ -1,4 +1,4 @@
-import { Route } from '@leadcode/routes'
+import { Route } from '@hypolia/routes'
 import { PageGeneralFeature } from './feature/page-general-feature'
 
 export const ROUTER_HOME: Route[] = [

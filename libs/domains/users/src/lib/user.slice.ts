@@ -1,6 +1,6 @@
 import {createAsyncThunk, createEntityAdapter, createSlice} from "@reduxjs/toolkit";
-import {RootState} from "@leadcode/state/store";
-import {UserEntity, UserState} from "@leadcode/contracts";
+import {RootState} from "@hypolia/state/store";
+import {UserEntity, UserState} from "@hypolia/contracts";
 
 export const USER_KEY = 'user'
 export const userAdapter = createEntityAdapter<UserEntity>()

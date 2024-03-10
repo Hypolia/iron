@@ -1,5 +1,5 @@
 import { type PermissionEntity } from '../entities'
-import { type MetaState} from '@leadcode/contracts'
+import { type MetaState} from '@hypolia/contracts'
 export interface PermissionsResponse {
   data: PermissionEntity[]
   meta: MetaState

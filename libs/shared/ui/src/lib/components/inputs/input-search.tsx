@@ -1,7 +1,7 @@
-import { classNames } from '@leadcode/utils'
+import { classNames } from '@hypolia/utils'
 import { type ReactElement, useRef, useState } from 'react'
 import { Icon } from '../icons/icon'
-import { IconAwesomeEnum } from '@leadcode/enums'
+import { IconAwesomeEnum } from '@hypolia/enums'
 import { MagnifyingGlassIcon, XMarkIcon } from '@heroicons/react/24/outline'
 
 export interface InputSearchProps {

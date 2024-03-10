@@ -1,5 +1,5 @@
 import {PageUserDangerZone} from '../ui/page-user-danger-zone'
-import {useDeleteUserByIdMutation} from "@leadcode/domains/users";
+import {useDeleteUserByIdMutation} from "@hypolia/domains/users";
 import {useEffect} from "react";
 import {useNavigate, useParams} from "react-router";
 import toast from "react-hot-toast";

@@ -1,6 +1,6 @@
 import {Controller, FormProvider, useForm} from 'react-hook-form'
-import {InputSelect, InputText, ModalCrud} from '@leadcode/ui'
-import { useGetRolesQuery, useStoreUserMutation } from '@leadcode/domains/users'
+import {InputSelect, InputText, ModalCrud} from '@hypolia/ui'
+import { useGetRolesQuery, useStoreUserMutation } from '@hypolia/domains/users'
 import {useEffect} from "react"
 import { toast } from 'react-hot-toast'
 

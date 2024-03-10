@@ -1,4 +1,4 @@
-import { classNames } from "@leadcode/utils"
+import { classNames } from "@hypolia/utils"
 
 export interface LoaderSpinnerProps {
 	className?: string
@@ -9,7 +9,7 @@ export interface LoaderSpinnerProps {
 
 export function LoaderSpinner ({
 	className = '',
-	classBorder = 'border-2', 
+	classBorder = 'border-2',
 	classWidth = 'w-4',
 	theme = 'light'
 }: LoaderSpinnerProps) {

@@ -1,4 +1,4 @@
-import { classNames } from "@leadcode/utils"
+import { classNames } from "@hypolia/utils"
 import { PropsWithChildren } from "react"
 
 export enum TagSize {

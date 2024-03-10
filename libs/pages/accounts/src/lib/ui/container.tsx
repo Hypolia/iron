@@ -1,6 +1,6 @@
 import {PropsWithChildren, useEffect, useState} from 'react'
-import {Button, Header, Icon, Tabs, useModal} from '@leadcode/ui'
-import { IconAwesomeEnum, IconEnum } from '@leadcode/enums'
+import {Button, Header, Icon, Tabs, useModal} from '@hypolia/ui'
+import { IconAwesomeEnum, IconEnum } from '@hypolia/enums'
 import {useLocation} from "react-router";
 import {CreateUserModal} from "../form/create-user-modal";
 import {match, P} from "ts-pattern";

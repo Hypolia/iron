@@ -15,18 +15,21 @@
     "skipDefaultLibCheck": true,
     "baseUrl": ".",
     "paths": {
-      "@leadcode/auth": ["libs/shared/auth/src/index.ts"],
-      "@leadcode/contracts": ["libs/shared/contracts/src/index.ts"],
-      "@leadcode/domains/users": ["libs/domains/users/src/index.ts"],
-      "@leadcode/enums": ["libs/shared/enums/src/index.ts"],
-      "@leadcode/layout": ["libs/pages/layout/src/index.ts"],
-      "@leadcode/pages/accounts": ["libs/pages/accounts/src/index.ts"],
-      "@leadcode/pages/home": ["libs/pages/home/src/index.ts"],
-      "@leadcode/pages/login": ["libs/pages/login/src/index.ts"],
-      "@leadcode/routes": ["libs/shared/routes/src/index.ts"],
-      "@leadcode/state/store": ["libs/state/store/src/index.ts"],
-      "@leadcode/ui": ["libs/shared/ui/src/index.ts"],
-      "@leadcode/utils": ["libs/shared/utils/src/index.ts"]
+      "@hypolia/domains/servers": ["libs/domains/servers/src/index.ts"],
+      "@hypolia/auth": ["libs/shared/auth/src/index.ts"],
+      "@hypolia/contracts": ["libs/shared/contracts/src/index.ts"],
+      "@hypolia/domains/users": ["libs/domains/users/src/index.ts"],
+      "@hypolia/enums": ["libs/shared/enums/src/index.ts"],
+      "@hypolia/layout": ["libs/pages/layout/src/index.ts"],
+      "@hypolia/pages/accounts": ["libs/pages/accounts/src/index.ts"],
+      "@hypolia/pages/home": ["libs/pages/home/src/index.ts"],
+      "@hypolia/pages/login": ["libs/pages/login/src/index.ts"],
+      "@hypolia/pages/servers": ["libs/pages/servers/src/index.ts"],
+      "@hypolia/pages/settings": ["libs/pages/settings/src/index.ts"],
+      "@hypolia/routes": ["libs/shared/routes/src/index.ts"],
+      "@hypolia/state/store": ["libs/state/store/src/index.ts"],
+      "@hypolia/ui": ["libs/shared/ui/src/index.ts"],
+      "@hypolia/utils": ["libs/shared/utils/src/index.ts"]
     }
   },
   "exclude": ["node_modules", "tmp"]

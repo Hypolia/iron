@@ -1,8 +1,8 @@
-import { Value } from "@leadcode/contracts"
+import { Value } from "@hypolia/contracts"
 import { ReactNode, useEffect, useId, useState } from "react"
 import Select, { GroupBase, MenuListProps, MenuPlacement, MultiValue, MultiValueProps, NoticeProps, OptionProps, SingleValue, SingleValueProps, components } from "react-select"
 import { Tooltip } from "../tooltip/tooltip"
-import { IconAwesomeEnum } from "@leadcode/enums"
+import { IconAwesomeEnum } from "@hypolia/enums"
 import { Icon } from "../icons/icon"
 
 import IconFa from "../icons/icon-fa/icon-fa"

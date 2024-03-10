@@ -1,7 +1,7 @@
-import { classNames } from "@leadcode/utils"
+import { classNames } from "@hypolia/utils"
 import { useEffect, useState } from "react"
 import { Icon } from "../icons/icon"
-import { Value } from '@leadcode/contracts'
+import { Value } from '@hypolia/contracts'
 
 export interface InputSelectSmallProps {
 	name: string

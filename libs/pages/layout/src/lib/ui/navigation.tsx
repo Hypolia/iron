@@ -1,19 +1,18 @@
 import { useLocation } from 'react-router'
 import { Link } from 'react-router-dom'
-import { ButtonIcon, ButtonIconStyle, Tooltip } from '@leadcode/ui'
+import {ButtonIcon, ButtonIconStyle, Icon, Tooltip} from '@hypolia/ui'
 import { HomeIcon, ChatBubbleLeftRightIcon, UserGroupIcon } from '@heroicons/react/20/solid'
-import { classNames } from '@leadcode/utils'
-import { IconAwesomeEnum } from '@leadcode/enums'
+import { classNames } from '@hypolia/utils'
+import { IconAwesomeEnum } from '@hypolia/enums'
 import { MenuAccountFeature } from '../feature/menu-account-feature'
 import {useSelector} from "react-redux";
-import {getUserState} from "@leadcode/domains/users";
 
 export function Navigation () {
   const { pathname } = useLocation()
 
   const matchHomeRoute = pathname.includes('/home')
   const matchAccountsRoute = pathname.includes('/accounts')
-  const matchBlogRoute = pathname.includes('/blogs')
+  const matchServersRoute = pathname.includes('/servers')
   const matchSettingsRoute = pathname.includes(`/settings`)
 
   return (
@@ -59,19 +58,15 @@ export function Navigation () {
             </Link>
           </Tooltip>
 
-          <Tooltip content={"Blogs"} side="right">
+          <Tooltip content={"Servers"} side="right">
             <Link
-              to="/blogs/general"
+              to="/servers/general"
               className={classNames(
                 'flex rounded-md p-3 mx-auto dark:hover:text-gray-100 hover:bg-neutral-200 dark:hover:bg-indigo-500 hover:text-brand-500 ease-in-out duration-200 dark:text-gray-400 ',
-                matchBlogRoute ? 'bg-neutral-200 !text-brand-500 dark:bg-indigo-500' : 'text-gray-400'
+                matchServersRoute ? 'bg-neutral-200 !text-brand-500 dark:bg-indigo-500' : 'text-gray-400'
               )}
             >
-              <ChatBubbleLeftRightIcon
-                className={classNames(
-                  'w-5',
-                )}
-              />
+              <Icon name="mdi:server" className="w-5" />
             </Link>
           </Tooltip>
         </div>
@@ -84,7 +79,7 @@ export function Navigation () {
                   className={matchSettingsRoute ? 'is-active' : ''}
                   icon={IconAwesomeEnum.WHEEL}
                   style={ButtonIconStyle.ALT}
-                  link={"/settings"}
+                  link={"/settings/general"}
                 />
               </div>
             </Tooltip>

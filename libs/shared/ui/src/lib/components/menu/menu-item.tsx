@@ -1,4 +1,4 @@
-import { classNames } from '@leadcode/utils'
+import { classNames } from '@hypolia/utils'
 import { type ClickEvent, MenuItem as Item } from '@szhsin/react-menu'
 import { ReactNode } from "react"
 import { useNavigate } from 'react-router-dom'
@@ -45,18 +45,18 @@ export function MenuItem (props: MenuItemProps) {
 	const navigate = useNavigate()
 	const disabledClassName = disabled ? 'opacity-50 cursor-not-allowed' : ''
 
-	const itemContent = itemContentCustom 
+	const itemContent = itemContentCustom
 		? itemContentCustom
-		: 
+		:
 		<>
 			<div className={classNames(
 				'flex items-center truncate', className
 			)}>
 
 				{/* COPY COMPONENT TOOD */}
-				{/* { copy && 
+				{/* { copy &&
 					<div onClick={(e) => e.preventDefault()}>
-						
+
 					</div>
 				} */}
 
@@ -77,7 +77,7 @@ export function MenuItem (props: MenuItemProps) {
 		</>
 
 	const item = link?.external
-		? 
+		?
 		<Item
 			className={classNames(
 				'menu-item',

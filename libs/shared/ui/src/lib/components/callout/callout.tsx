@@ -1,6 +1,6 @@
 import { type VariantProps, cva } from 'class-variance-authority'
 import { type ComponentPropsWithoutRef, type ElementRef, forwardRef } from 'react'
-import { twMerge } from '@leadcode/utils'
+import { twMerge } from '@hypolia/utils'
 
 const calloutRootVariants = cva(['flex', 'flex-row', 'gap-x-3', 'p-3', 'border', 'rounded', 'text-sm'], {
   variants: {

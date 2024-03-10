@@ -1,6 +1,6 @@
 import { ChangeEventHandler, ReactNode, RefObject, useEffect, useRef, useState } from "react"
 import { Icon } from "../icons/icon"
-import { IconAwesomeEnum } from "@leadcode/enums"
+import { IconAwesomeEnum } from "@hypolia/enums"
 
 export interface InputTextProps {
 	name: string

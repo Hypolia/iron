@@ -1,7 +1,7 @@
 import { Link, useLocation } from "react-router-dom"
 import { NavigationLeftSubLink } from "./navigation-left-sub-link/navigation-left-sub-link"
 import { Icon } from "../icons/icon"
-import { IconAwesomeEnum } from "@leadcode/enums"
+import { IconAwesomeEnum } from "@hypolia/enums"
 
 export interface NavigationLeftProps {
   links: NavigationLeftLinkProps[]

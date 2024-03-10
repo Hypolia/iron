@@ -1,5 +1,5 @@
 import {createApi, fetchBaseQuery} from "@reduxjs/toolkit/query/react";
-import {PermissionsResponse} from "@leadcode/contracts";
+import {PermissionsResponse} from "@hypolia/contracts";
 export const permissionApi = createApi({
   reducerPath: 'permissionApi',
   baseQuery: fetchBaseQuery({

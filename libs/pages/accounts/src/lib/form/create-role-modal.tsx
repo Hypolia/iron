@@ -1,6 +1,6 @@
 import {Controller, FormProvider, useForm} from "react-hook-form";
-import {InputSelect, InputText, ModalCrud} from "@leadcode/ui";
-import {useGetPermissionsQuery, useStoreRoleMutation} from "@leadcode/domains/users";
+import {InputSelect, InputText, ModalCrud} from "@hypolia/ui";
+import {useGetPermissionsQuery, useStoreRoleMutation} from "@hypolia/domains/users";
 
 export interface CreateRoleModalProps {
   onClose: () => void

@@ -1,4 +1,4 @@
-import {IconAwesomeEnum, IconEnum} from "@leadcode/enums";
+import {IconAwesomeEnum, IconEnum} from "@hypolia/enums";
 import {PlusIcon} from '@heroicons/react/24/outline'
 import {
   AcademicCapIcon,

@@ -1,5 +1,5 @@
-import { UserEntity } from '@leadcode/contracts'
-import {Button, EmptyState, Table, TableHeadProps} from "@leadcode/ui";
+import { UserEntity } from '@hypolia/contracts'
+import {Button, EmptyState, Table, TableHeadProps} from "@hypolia/ui";
 import {TableRowUser} from "./table-row-user";
 
 export interface PageUsersGeneralProps {

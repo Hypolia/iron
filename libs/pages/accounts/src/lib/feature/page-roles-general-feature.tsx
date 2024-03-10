@@ -1,5 +1,5 @@
 import {PageRolesGeneral} from "../ui/page-roles-general";
-import {useGetRolesQuery} from "@leadcode/domains/users";
+import {useGetRolesQuery} from "@hypolia/domains/users";
 
 export function PageRolesGeneralFeature () {
 

@@ -5,6 +5,9 @@ settings:
   excludeLinksFromLockfile: false
 
 dependencies:
+  '@adonisjs/transmit-client':
+    specifier: ^0.1.6
+    version: 0.1.6
   '@axa-fr/react-oidc':
     specifier: ^7.15.2
     version: 7.15.4(react@18.2.0)
@@ -115,6 +118,9 @@ devDependencies:
   '@nx/vite':
     specifier: 18.0.2
     version: 18.0.2(@swc-node/register@1.8.0)(@swc/core@1.4.0)(@types/node@20.11.16)(nx@18.0.2)(typescript@5.3.3)(vite@5.0.12)(vitest@1.2.2)
+  '@nx/web':
+    specifier: 18.0.2
+    version: 18.0.2(@swc-node/register@1.8.0)(@swc/core@1.4.0)(@types/node@20.11.16)(nx@18.0.2)(typescript@5.3.3)
   '@nx/workspace':
     specifier: 18.0.2
     version: 18.0.2(@swc-node/register@1.8.0)(@swc/core@1.4.0)
@@ -239,6 +245,11 @@ packages:
     resolution: {integrity: sha512-1Yjs2SvM8TflER/OD3cOjhWWOZb58A2t7wpE2S9XfBYTiIl+XFhQG2bjy4Pu1I+EAlCNUzRDYDdFwFYUKvXcIA==}
     engines: {node: '>=0.10.0'}
     dev: true
+
+  /@adonisjs/transmit-client@0.1.6:
+    resolution: {integrity: sha512-PngVhitiUK+UU8e8cYfOdNxW7+779IKsTMH2crV1AYDYbftKxpV8IY/Cz88S9y3AgFS0uY9WQHaZahK1uVOmeA==}
+    engines: {node: '>=18.16.0'}
+    dev: false
 
   /@alloc/quick-lru@5.2.0:
     resolution: {integrity: sha512-UrcABB+4bUrFABwbluTIBErXwvbsU/V7TZWfmbgJfbkwiBuziS9gxdODUyuiecfdGQ85jglMW6juS3+z5TsKLw==}

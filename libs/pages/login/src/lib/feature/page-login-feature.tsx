@@ -4,9 +4,9 @@ import { useForm, FormProvider } from 'react-hook-form'
 import { useRedirectIfLogged } from "../hooks/use-redirect-if-logged"
 import Login from "../ui/page-login"
 import LayoutLogin from "../ui/layout"
-import { useLoginMutation, userActions } from "@leadcode/domains/users"
+import { useLoginMutation, userActions } from "@hypolia/domains/users"
 import { useDispatch } from "react-redux"
-import { AppDispatch } from "@leadcode/state/store"
+import { AppDispatch } from "@hypolia/state/store"
 
 
 export default function PageLoginFeature() {

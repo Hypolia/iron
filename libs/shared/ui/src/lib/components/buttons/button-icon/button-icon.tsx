@@ -1,4 +1,4 @@
-import { IconEnum } from "@leadcode/enums"
+import { IconEnum } from "@hypolia/enums"
 import { ButtonSize } from "../button"
 import { Icon } from "../../icons/icon"
 import { Link } from "react-router-dom"

@@ -1,4 +1,4 @@
-import {classNames} from '@leadcode/utils'
+import {classNames} from '@hypolia/utils'
 import {Icon} from '../icons/icon'
 import { Tooltip } from '../tooltip/tooltip'
 

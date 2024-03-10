@@ -1,8 +1,8 @@
 import {BaseQueryFn, createApi, FetchArgs, fetchBaseQuery, FetchBaseQueryError} from '@reduxjs/toolkit/query/react'
-import { type RootState } from '@leadcode/state/store'
+import { type RootState } from '@hypolia/state/store'
 import {useStore} from "react-redux";
 import {userActions} from "./user.slice";
-import {UserEntity, UserResponse} from "@leadcode/contracts";
+import {UserEntity, UserResponse} from "@hypolia/contracts";
 
 
 const baseQuery = fetchBaseQuery({

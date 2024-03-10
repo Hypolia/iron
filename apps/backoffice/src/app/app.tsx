@@ -1,16 +1,19 @@
 import { Navigate, Route, Routes, useLocation, useNavigate } from 'react-router'
 import { ROUTER } from './router.main'
 import { match } from 'ts-pattern'
-import {getUserState, useGetUserQuery, useLoginMutation, userActions} from "@leadcode/domains/users";
-import {useEffect} from "react";
+import {getUserState, useGetUserQuery, useLoginMutation, userActions} from "@hypolia/domains/users";
+import {useCallback, useEffect, useMemo, useState} from "react";
 import {useDispatch, useSelector} from "react-redux";
-import {AppDispatch} from "@leadcode/state/store";
-import { Layout } from '@leadcode/layout'
-import { PageAuth } from '@leadcode/pages/login'
-import { ProtectedRoute, useAuth } from '@leadcode/auth'
-import { LoadingScreen } from '@leadcode/ui';
+import {AppDispatch} from "@hypolia/state/store";
+import { Layout } from '@hypolia/layout'
+import { ProtectedRoute, useAuth } from '@hypolia/auth'
+import { LoadingScreen } from '@hypolia/ui';
 import {useOidc, useOidcAccessToken} from "@axa-fr/react-oidc";
 import {Toaster} from "react-hot-toast";
+import { Transmit } from '@adonisjs/transmit-client'
+
+
+
 
 export default function App() {
   const { isLoading } = useSelector(getUserState)
@@ -19,6 +22,11 @@ export default function App() {
   const { pathname } = useLocation()
   const { isAuthenticated, login,  } = useOidc()
   const { accessToken, accessTokenPayload } = useOidcAccessToken()
+  const [call, setCall] = useState(false)
+
+
+  
+
 
   useEffect(() => {
     if (!isAuthenticated) {
@@ -26,14 +34,13 @@ export default function App() {
     }
   }, [isAuthenticated])
 
-
   useEffect(() => {
-    console.log(accessToken, accessTokenPayload)
     if (accessToken && accessTokenPayload) {
       dispatch(userActions.setUser({
         user: accessTokenPayload,
         token: accessToken
       }))
+      setCall(true)
     }
   }, [accessToken, accessTokenPayload]);
 
@@ -43,6 +50,10 @@ export default function App() {
       <LoadingScreen />
     )
   }
+
+
+
+ 
 
   return (
     <div>
@@ -56,7 +67,7 @@ export default function App() {
                 key={r.path}
                 path={r.path}
                 element={
-                  <Layout>
+                  <Layout topBar={r.topBar}>
                     {r.protected ? <ProtectedRoute>{r.component}</ProtectedRoute> : r.component}
                   </Layout>
                 }

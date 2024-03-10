@@ -1,5 +1,5 @@
-import {RoleEntity} from "@leadcode/contracts";
-import {TableHeadProps, TableRow} from "@leadcode/ui";
+import {RoleEntity} from "@hypolia/contracts";
+import {TableHeadProps, TableRow} from "@hypolia/ui";
 
 export interface TableRowRoleProps {
   data: RoleEntity

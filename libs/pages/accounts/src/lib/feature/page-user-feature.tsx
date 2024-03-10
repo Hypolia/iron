@@ -1,4 +1,4 @@
-import { useGetUserByIdQuery } from "@leadcode/domains/users"
+import { useGetUserByIdQuery } from "@hypolia/domains/users"
 import { useParams } from "react-router"
 import { PageUser } from "../ui/page-user"
 import { useEffect, useState } from "react"

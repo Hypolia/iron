@@ -17,7 +17,7 @@ export function LayoutPage({ topBar, children }: PropsWithChildren<LayoutPagePro
 
           <div className="w-full flex flex-col max-h-full">
             {topBar && <TopBar />}
-            <div className="h-full">
+            <div className="h-full pt-2 px-2">
               { children }
             </div>
           </div>

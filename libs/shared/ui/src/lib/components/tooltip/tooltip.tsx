@@ -1,7 +1,7 @@
 import * as TooltipPrimitive from '@radix-ui/react-tooltip'
 import { type VariantProps, cva } from 'class-variance-authority'
 import { ComponentProps, ElementRef, ReactNode, forwardRef } from 'react'
-import { classNames } from '@leadcode/utils'
+import { classNames } from '@hypolia/utils'
 
 const tooltipContentVariants = cva(['rounded-sm', 'px-2', 'py-1', 'text-xs', 'font-medium', 'z-20'], {
   variants: {

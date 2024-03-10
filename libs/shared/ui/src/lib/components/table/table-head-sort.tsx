@@ -1,6 +1,6 @@
 import {Dispatch, SetStateAction, useState} from "react";
-import {classNames} from "@leadcode/utils";
-import {IconAwesomeEnum} from "@leadcode/enums";
+import {classNames} from "@hypolia/utils";
+import {IconAwesomeEnum} from "@hypolia/enums";
 import { Icon } from "../icons/icon";
 
 export interface TableHeadSortProps<T> {

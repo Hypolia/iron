@@ -1,5 +1,5 @@
 import {PropsWithChildren, ReactNode} from 'react'
-import {twMerge} from "@leadcode/utils";
+import {twMerge} from "@hypolia/utils";
 
 export interface BlockContentProps {
   title: string

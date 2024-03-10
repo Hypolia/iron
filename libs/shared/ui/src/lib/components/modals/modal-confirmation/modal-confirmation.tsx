@@ -6,7 +6,7 @@ import { Tooltip } from '../../tooltip/tooltip'
 import { useModal } from '../../modal'
 import {Controller, useForm} from 'react-hook-form'
 import { Callout } from '../../callout/callout'
-import {IconAwesomeEnum} from "@leadcode/enums";
+import {IconAwesomeEnum} from "@hypolia/enums";
 
 export interface ModalConfirmationProps extends PropsWithChildren {
   title: string

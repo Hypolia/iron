@@ -1,5 +1,5 @@
-import { IconAwesomeEnum } from "@leadcode/enums"
-import { Avatar, Icon, Menu, MenuAlign, MenuData, MenuDirection } from "@leadcode/ui"
+import { IconAwesomeEnum } from "@hypolia/enums"
+import { Avatar, Icon, Menu, MenuAlign, MenuData, MenuDirection } from "@hypolia/ui"
 import { useNavigate } from "react-router"
 
 export interface MenuAccountProps {

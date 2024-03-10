@@ -1,11 +1,11 @@
 import { StrictMode } from 'react'
 import App from './app/app'
 import { createRoot } from 'react-dom/client'
-import { setupStore } from '@leadcode/state/store'
+import { setupStore } from '@hypolia/state/store'
 import { Provider } from 'react-redux'
 import { BrowserRouter } from 'react-router-dom'
 import { TooltipProvider } from '@radix-ui/react-tooltip'
-import { ModalProvider } from '@leadcode/ui'
+import { ModalProvider } from '@hypolia/ui'
 import { OidcConfiguration, OidcProvider } from '@axa-fr/react-oidc';
 
 const container = document.getElementById('root') || document.createElement('div')

@@ -3,7 +3,7 @@ import {type MouseEvent, ReactNode, useRef, useState, useMemo, useEffect } from 
 import { MenuGroup } from './menu-group'
 import { MenuItemProps } from './menu-item'
 import { Tooltip } from '../tooltip/tooltip'
-import { classNames } from '@leadcode/utils'
+import { classNames } from '@hypolia/utils'
 
 export enum MenuDirection {
   TOP = 'top',
@@ -86,9 +86,9 @@ export function Menu(props: MenuProps) {
 	const menusStringify = JSON.stringify(menus, ignoreCircularReferences())
 
 	const menusMemo = useMemo(
-		() => 
+		() =>
 			menus.map((menu, index) => (
-				<MenuGroup 
+				<MenuGroup
 					key={index}
 					menu={menu}
 					isLast={index === menus.length - 1}
@@ -138,7 +138,7 @@ export function Menu(props: MenuProps) {
       window.removeEventListener('resize', closeMenu)
       window.removeEventListener('scroll', closeMenu)
     }
-	}, [open]) 
+	}, [open])
 
 	let offsetX = 0
 	let offsetY = 0
@@ -191,7 +191,7 @@ export function Menu(props: MenuProps) {
 				{ children }
 				{ menusMemo }
 			</ControlledMenu>
-		
+
 		</>
 	)
 }

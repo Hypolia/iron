@@ -5,6 +5,7 @@
   "scripts": {},
   "private": true,
   "dependencies": {
+    "@adonisjs/transmit-client": "^0.1.6",
     "@axa-fr/react-oidc": "^7.15.2",
     "@heroicons/react": "^2.1.1",
     "@radix-ui/react-dialog": "^1.0.5",
@@ -43,6 +44,7 @@
     "@nx/next": "18.0.2",
     "@nx/react": "18.0.2",
     "@nx/vite": "18.0.2",
+    "@nx/web": "18.0.2",
     "@nx/workspace": "18.0.2",
     "@swc-node/register": "~1.8.0",
     "@swc/cli": "~0.3.9",

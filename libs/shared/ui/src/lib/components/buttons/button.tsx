@@ -1,4 +1,4 @@
-import { IconEnum } from "@leadcode/enums"
+import { IconEnum } from "@hypolia/enums"
 import { ReactNode } from "react"
 import { Icon } from "../icons/icon"
 import { LoaderSpinner } from "../loader-spinner/loader-spinner"

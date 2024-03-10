@@ -1,6 +1,6 @@
-import { type RoleSchema, type RolesResponse } from '@leadcode/contracts'
+import { type RoleSchema, type RolesResponse } from '@hypolia/contracts'
 import { createApi, fetchBaseQuery } from '@reduxjs/toolkit/query/react'
-import { type RootState } from '@leadcode/state/store'
+import { type RootState } from '@hypolia/state/store'
 
 export const roleApi = createApi({
   reducerPath: 'roleApi',

@@ -1,5 +1,5 @@
 import {Dispatch, ReactNode, SetStateAction, useEffect, useState} from "react"
-import {classNames} from "@leadcode/utils"
+import {classNames} from "@hypolia/utils"
 import {TableHeadFilter} from "./table-head-filter"
 import {TableHeadSort} from "./table-head-sort"
 

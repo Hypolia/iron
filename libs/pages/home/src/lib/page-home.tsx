@@ -1,6 +1,6 @@
 import { ROUTER_HOME } from "./router";
 import { Container } from "./ui/container";
-import { Route, Routes } from 'react-router'
+import { Route, Routes } from 'react-router'
 
 export function PageHome () {
   return (

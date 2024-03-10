@@ -1,7 +1,7 @@
 import { MenuAccount } from '../ui/menu-account'
 import {useSelector} from "react-redux";
-import {getUserState} from "@leadcode/domains/users";
-import {LoaderSpinner} from "@leadcode/ui";
+import {getUserState} from "@hypolia/domains/users";
+import {LoaderSpinner} from "@hypolia/ui";
 import {useState} from "react";
 import {useOidc} from "@axa-fr/react-oidc";
 
@@ -12,6 +12,8 @@ export function MenuAccountFeature () {
   async function handleLogout () {
     await logout('/home')
   }
+
+  console.log(user)
 
   return (
     <>

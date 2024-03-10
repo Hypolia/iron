@@ -1,6 +1,6 @@
 import * as PopoverPrimitive from '@radix-ui/react-popover'
 import { type ComponentPropsWithoutRef, type ElementRef, forwardRef } from 'react'
-import {twMerge} from "@leadcode/utils";
+import {twMerge} from "@hypolia/utils";
 
 type PopoverRootProps = ComponentPropsWithoutRef<typeof PopoverPrimitive.Root>
 function PopoverRoot(props: PopoverRootProps) {
